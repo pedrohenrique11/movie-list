@@ -40,6 +40,18 @@ header {
   margin-bottom: 5rem;
   border-bottom: 1px solid #1093BF;
 }
+@media screen and (max-width: 410px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 410px) {
+  header h1 {
+    margin-bottom: 1rem;
+  }
+}
 header .form input {
   padding: 0.4rem;
   margin-right: 0.2rem;
@@ -61,10 +73,15 @@ header .form button:hover {
 }
 
 section {
-  width: 60rem;
+  width: 50rem;
   max-width: 90%;
   margin: 0 auto;
   background-color: var(--primary-color);
+}
+@media screen and (max-width: 550px) {
+  section {
+    max-width: 95%;
+  }
 }
 section ul {
   list-style: none;

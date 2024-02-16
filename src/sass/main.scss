@@ -8,9 +8,18 @@ header {
     padding: 5rem 0 1rem 0;
     margin-bottom: 5rem;
 
+    @media screen and (max-width:410px) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
 
     border-bottom: 1px solid #1093BF;
     h1 {
+        @media screen and (max-width:410px) {
+            margin-bottom: 1rem;
+          }
     }
     .form {
         input {
@@ -40,10 +49,13 @@ header {
 
 }
 section {
-    width: 60rem;
+    width: 50rem;
     max-width: 90%;
     margin: 0 auto;
     background-color: var(--primary-color);
+    @media screen and (max-width:550px) {
+        max-width: 95%;
+      }
 
     ul {
         list-style: none;
