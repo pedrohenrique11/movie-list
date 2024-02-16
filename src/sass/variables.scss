@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+:root {
+    --background-dark-color: #25262A;
+    --primary-dark-color: #2D2E32;
+    --secondary-color: #1093BF;
+
+    --title-dark-color: ;
+    --text-dark-color: ;
+
+    --background-color: ;
+    --primary-color: ;
+
+    --title-color: ;
+    --text-color: ;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  body {
+    min-height: 100vh;
+    color: #fff;
+    background: #25262A;
+    transition:
+      color 0.5s,
+      background-color 0.5s;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

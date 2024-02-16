@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --background-dark-color: #25262A;
+  --primary-dark-color: #2D2E32;
+  --secondary-color: #1093BF;
+  --title-dark-color: ;
+  --text-dark-color: ;
+  --background-color: ;
+  --primary-color: ;
+  --title-color: ;
+  --text-color: ;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: #25262A;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  width: 60rem;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+}
+section ul {
+  list-style: none;
+  padding: 0;
+}
+section ul li {
+  display: flex;
+  margin: 1rem 0;
+  padding: 0.6rem;
+  border-radius: 3px;
+  border: 1px solid #2D2E32;
+  background-color: #2D2E32;
+  transition: border 1s ease;
+}
+section ul li:hover {
+  border: 1px solid #1093BF;
+}
+section ul li img {
+  max-width: 8rem;
+  margin-right: 1rem;
+  border-radius: 3px;
+}
+section ul li .movie-description .movie-details {
+  display: flex;
+}
+section ul li .movie-description .movie-details h4 {
+  padding: 0.3rem;
+  margin: 0.6rem 0.4rem 0 0;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  background-color: #1093BF;
+}
+
+/*# sourceMappingURL=main.css.map */
