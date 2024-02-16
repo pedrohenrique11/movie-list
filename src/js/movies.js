@@ -51,6 +51,7 @@ export class MovieList {
 
     this.entries = fileteredMovies;
     this.update()
+    this.save()
     }
 }
 //View
