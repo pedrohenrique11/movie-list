@@ -1,4 +1,4 @@
 // Model
-import { MovieList } from './movies.js'
+import { MoviesView } from './movies.js'
 
-new MovieList('#app')
+new MoviesView('#app')
