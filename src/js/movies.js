@@ -33,10 +33,14 @@ export class MovieList {
     async add(moviename) {
         try {
             const isOnTheList = this.entries.find(entry => entry.title === moviename);
-            if(isOnTheList) throw new Error('film is already on the list');
+            if(isOnTheList) {
+                throw new Error('film is already on the list');
+            }
 
             const movie = await Movie.getMovie(moviename);
-            if(movie === undefined) throw new Error('Movie not found!');
+            if(movie.title === undefined) {
+                throw new Error('Movie not found!');
+            }
 
             this.entries = [movie, ...this.entries];
             this.update();
