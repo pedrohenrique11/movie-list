@@ -1,7 +1,7 @@
 //Model
 export class Movie {
     static getMovie(moviename) {
-        const endpoint = `http://www.omdbapi.com/?apikey=5471a6fb&t=${moviename}`
+        const endpoint = `https://www.omdbapi.com/?apikey=5471a6fb&t=${moviename}`
 
         return fetch(endpoint)
         .then(data => data.json())
