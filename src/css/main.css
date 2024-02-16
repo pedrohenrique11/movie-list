@@ -32,6 +32,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #1093BF;
+}
+header input {
+  padding: 0.4rem;
+  border-radius: 3px;
+  border: none;
+}
+header button {
+  padding: 0.4rem;
+  color: #fff;
+  background-color: #2D2E32;
+  border-radius: 3px;
+  border: 1px solid #1093BF;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+header button:hover {
+  padding: 0.4rem 0.8rem;
+  background-color: #1093BF;
+}
+
 section {
   width: 60rem;
   max-width: 90%;
@@ -51,6 +78,11 @@ section ul li {
   background-color: #2D2E32;
   transition: border 1s ease;
 }
+@media screen and (max-width: 550px) {
+  section ul li {
+    padding: 1rem;
+  }
+}
 section ul li:hover {
   border: 1px solid #1093BF;
 }
@@ -59,15 +91,43 @@ section ul li img {
   margin-right: 1rem;
   border-radius: 3px;
 }
+@media screen and (max-width: 550px) {
+  section ul li img {
+    display: none;
+  }
+}
+section ul li .movie-description .movie-title {
+  border-bottom: 1px solid #1093BF;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 800px) {
+  section ul li .movie-description .movie-plot {
+    font-size: 0.8rem;
+  }
+}
 section ul li .movie-description .movie-details {
   display: flex;
 }
 section ul li .movie-description .movie-details h4 {
-  padding: 0.3rem;
+  padding: 0.2rem;
   margin: 0.6rem 0.4rem 0 0;
   font-size: 0.8rem;
   border-radius: 3px;
   background-color: #1093BF;
+}
+section ul li .movie-description .movie-details button {
+  padding: 0.2rem 0.4rem;
+  margin: 0.6rem 1rem 0 1rem;
+  color: #fff;
+  background-color: #2D2E32;
+  border-radius: 3px;
+  border: 1px solid #bf1010;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+section ul li .movie-description .movie-details button:hover {
+  padding: 0.2rem 0.8rem;
+  background-color: #bf1010;
 }
 
 /*# sourceMappingURL=main.css.map */
