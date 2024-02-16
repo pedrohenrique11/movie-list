@@ -36,16 +36,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  padding: 5rem 0 1rem 0;
   margin-bottom: 5rem;
   border-bottom: 1px solid #1093BF;
 }
-header input {
+header .form input {
   padding: 0.4rem;
+  margin-right: 0.2rem;
   border-radius: 3px;
   border: none;
 }
-header button {
+header .form button {
   padding: 0.4rem;
   color: #fff;
   background-color: #2D2E32;
@@ -54,7 +55,7 @@ header button {
   transition: 0.3s ease;
   cursor: pointer;
 }
-header button:hover {
+header .form button:hover {
   padding: 0.4rem 0.8rem;
   background-color: #1093BF;
 }
@@ -116,7 +117,7 @@ section ul li .movie-description .movie-details h4 {
   background-color: #1093BF;
 }
 section ul li .movie-description .movie-details button {
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.6rem;
   margin: 0.6rem 1rem 0 1rem;
   color: #fff;
   background-color: #2D2E32;
